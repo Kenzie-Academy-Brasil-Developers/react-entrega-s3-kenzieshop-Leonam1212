@@ -11,20 +11,23 @@ export default createGlobalStyle`
     :root {
         --whiteCity: #dfe6e9;
         --white: #f5f5f5;
-        --black: #0c0d0d;
-        --red: #c53030;
         --EletromagneticColor:#2f3640;
-        --blue: #5352ed
+  
     }
 
     body {
-        font-family: 'Raleway', sans-serif;
-        background: var(--EletromagneticColor);
+        font-family: 'Poppins', sans-serif;
+        background: url("https://besthqwallpapers.com/Temp/2-10-2021/black-low-poly-background-4k-triangles-patterns-low-poly-textures-geometric-shapes-besthqwallpapers.com-2560x1440.jpg");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        letter-spacing:1.5px;
     }
     
     body, input, button {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1rem;
+        color: var(--whiteCity);
     }
 
     h1,h2,h3,h4,h5,h6 {
