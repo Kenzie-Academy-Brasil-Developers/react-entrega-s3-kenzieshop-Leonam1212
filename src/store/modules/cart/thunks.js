@@ -1,10 +1,12 @@
 import { addToCart, removeFromCart } from "./actions";
+import { toast } from "react-toastify";
 
 export const addToCartThunk = (product) => (dispatch, getStore) => {
   const list = JSON.parse(localStorage.getItem("cart")) || [];
   list.push(product);
   localStorage.setItem("cart", JSON.stringify(list));
     dispatch(addToCart(product));
+    toast.success("Produto adicionado ao carrinho")
 };
 
 export const removeFromCartThunk = (id) => (dispatch, getStore) => {
@@ -13,5 +15,7 @@ export const removeFromCartThunk = (id) => (dispatch, getStore) => {
   localStorage.setItem("cart", JSON.stringify(list));
 
   dispatch(removeFromCart(list))
+  toast.error("Produto removido do carrinho")
+
 
 };

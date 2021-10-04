@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { Container, Content, Header } from "./style";
 import MiniDrawer from "../../pages/CartPage/index";
-import Product from "../Product/index";
+import Product from "../../components/Product";
 const HomePage = () => {
   const products = useSelector((store) => store.products);
   return (

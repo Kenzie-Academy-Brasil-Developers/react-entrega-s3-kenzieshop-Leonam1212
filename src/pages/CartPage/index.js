@@ -20,7 +20,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import { useSelector } from "react-redux";
-import Product from "../Product/index";
+import Product from "../../components/Product";
 const drawerWidth = 240;
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -66,7 +66,7 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBarra
-        style={{ background: "transparent" }}
+        style={{ background: "#353b48" }}
         position="fixed"
         open={open}
       >
